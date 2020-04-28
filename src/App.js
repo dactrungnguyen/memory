@@ -22,8 +22,9 @@ class App extends Component {
     return shuffle(result)
   }
   
-  handleCardClick(card) {
-    console.log(card, 'clicked')
+  // Arrow fx for binding to "this"
+  handleCardClick = card => {
+    console.log(card, 'clicked', this)
   }
 
   render() {
